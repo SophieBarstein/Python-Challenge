@@ -11,6 +11,9 @@ Original file is located at
 import pandas as pd
 df = pd.read_csv('election_data.csv')
 
+#Save header rows
+headers = list(df.columns)
+
 #Total nuber of votes
 votes = 0
 for i in range(len(df)):
