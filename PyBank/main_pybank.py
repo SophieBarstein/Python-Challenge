@@ -26,7 +26,7 @@ for i in range(len(budget)):
 
 #Average of change in profits over entire period
 budget['Change'] = budget['Profit/Losses'].diff()
-average_change = budget['Change'].mean()
+average_change = round(budget['Change'].mean(), 2)
 
 #Greatest increase in profits
 greatest = 0
