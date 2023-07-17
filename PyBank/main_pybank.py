@@ -11,6 +11,9 @@ Original file is located at
 import pandas as pd
 budget = pd.read_csv("budget_data.csv")
 
+#Store header rows
+headers = list(budget.columns)
+
 #Count the number of entries to get the total number of months
 months = 0
 for i in range(len(budget)):
